@@ -49,16 +49,16 @@ def addCliente():
     correo = request.json.get('correo')
     estado = request.json.get('estado')
 
-    #cliente.rut = rut
-    #cliente.dv = dv
-    #cliente.primer_nombre = primer_nombre
-    #cliente.segundo_nombre = segundo_nombre
-    #cliente.apellido_paterno = apellido_paterno
-    #cliente.apellido_materno = apellido_materno
-    #cliente.direccion = direccion
-    #cliente.fono = fono
-    #cliente.correo = correo
-    #cliente.estado = estado
+    cliente.rut = rut
+    cliente.dv = dv
+    cliente.primer_nombre = primer_nombre
+    cliente.segundo_nombre = segundo_nombre
+    cliente.apellido_paterno = apellido_paterno
+    cliente.apellido_materno = apellido_materno
+    cliente.direccion = direccion
+    cliente.fono = fono
+    cliente.correo = correo
+    cliente.estado = estado
 
     Cliente.save(cliente)
 
@@ -84,38 +84,27 @@ def deleteCliente(id_cliente):
 def updateCliente(id_cliente):
     cliente = Cliente.query.get(id_cliente)
 
-    #rut = request.json.get('rut')
-    #dv = request.json.get('dv')
-    #primer_nombre = request.json.get('primer_nombre')
-    #segundo_nombre = request.json.get('segundo_nombre')
-    #apellido_paterno = request.json.get('apellido_paterno')
-    #apellido_materno = request.json.get('apellido_materno')
-    #direccion = request.json.get('direccion')
-    #fono = request.json.get('fono')
-    #correo = request.json.get('correo')
-    #estado = request.json.get('estado')
+    rut = request.json.get('rut')
+    dv = request.json.get('dv')
+    primer_nombre = request.json.get('primer_nombre')
+    segundo_nombre = request.json.get('segundo_nombre')
+    apellido_paterno = request.json.get('apellido_paterno')
+    apellido_materno = request.json.get('apellido_materno')
+    direccion = request.json.get('direccion')
+    fono = request.json.get('fono')
+    correo = request.json.get('correo')
+    estado = request.json.get('estado')
 
-    #cliente.rut = rut
-    #cliente.dv = dv
-    #cliente.primer_nombre = primer_nombre
-    #cliente.segundo_nombre = segundo_nombre
-    #cliente.apellido_paterno = apellido_paterno
-    #cliente.apellido_materno = apellido_materno
-    #cliente.direccion = direccion
-    #cliente.fono = fono
-    #cliente.correo = correo
-    #cliente.estado = estado
-
-    cliente.rut = request.json.get('rut')
-    cliente.dv = request.json.get('dv')
-    cliente.primer_nombre = request.json.get('primer_nombre')
-    cliente.segundo_nombre = request.json.get('segundo_nombre')
-    cliente.apellido_paterno = request.json.get('apellido_paterno')
-    cliente.apellido_materno = request.json.get('apellido_materno')
-    cliente.direccion = request.json.get('direccion')
-    cliente.fono = request.json.get('fono')
-    cliente.correo = request.json.get('correo')
-    cliente.estado = request.json.get('estado')
+    cliente.rut = rut
+    cliente.dv = dv
+    cliente.primer_nombre = primer_nombre
+    cliente.segundo_nombre = segundo_nombre
+    cliente.apellido_paterno = apellido_paterno
+    cliente.apellido_materno = apellido_materno
+    cliente.direccion = direccion
+    cliente.fono = fono
+    cliente.correo = correo
+    cliente.estado = estado
 
     Cliente.save(cliente)
 
